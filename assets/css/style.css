@@ -244,3 +244,35 @@ header {
   width: 100%;
   background-color: rgba(41, 74, 43, 0.9);
 }
+
+@media (max-width: 768px) {
+  .produtosb {
+    grid-template-columns: 1fr; /* Produtos ficam 1 em cima do outro no celular */
+  }
+
+  .sobrenós {
+    grid-template-columns: 1fr; /* Quem Somos também fica 1 por linha */
+  }
+
+  .menu {
+    flex-direction: column; /* Menu empilha os itens */
+    height: auto;
+  }
+
+  .item {
+    width: 100%;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .texto {
+    margin-left: 0;
+    text-align: center;
+    margin-top: 50px;
+  }
+
+  .container, .container2 {
+    width: 90%; /* Deixa a margem maior */
+  }
+}
+
